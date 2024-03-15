@@ -19,7 +19,6 @@ export default function Time({ time, day }) {
       time,
       day
     }
-    console.log(obj)
   };
   return (
     <div>

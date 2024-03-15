@@ -1,5 +1,5 @@
+import RegisterLoginForm from "../../shared/RegisterLoginForm";
+
 export default function Register() {
-  return (
-    <div>Register</div>
-  )
+  return <RegisterLoginForm state={"Register"}/>;
 }

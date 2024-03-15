@@ -56,3 +56,7 @@
   display: flex;
   align-items: center;
 }
+
+.registerLogin{
+  display: flex;
+}

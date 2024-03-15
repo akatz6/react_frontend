@@ -37,7 +37,9 @@ const authApi = api.injectEndpoints({
  * Stores the payload's token in both state and session storage.
  */
 function storeToken(state, { payload }) {
-  payload = JSON.parse(payload)
+  if (typeof(payload) === "string") {
+    payload = JSON.parse(payload);
+  }
   state.token = payload.token;
   state.user = payload.user;
   window.sessionStorage.setItem(TOKEN, payload.token);
