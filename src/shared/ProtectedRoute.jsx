@@ -1,8 +1,7 @@
 import { useSelector } from "react-redux";
 import { Navigate, Outlet } from "react-router-dom";
 export const ProtectedRoute = () => {
-    const token = useSelector((state) => state.auth.token);
-  
+    const token = window.sessionStorage.getItem("token");
 
   // Check if the user is authenticated
   if (!token) {
